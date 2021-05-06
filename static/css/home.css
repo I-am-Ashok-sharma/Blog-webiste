@@ -1,0 +1,30 @@
+
+.content{
+    height: 100%;
+    width: 60%;
+    padding: 0 0 0 30px;
+  }
+  .sidebar{
+  padding-top: 70px;
+  height: auto;
+  width: 25%;
+ 
+  position:fixed ;  /*Fixed Sidebar (stay in place on scroll) */
+  z-index:1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  
+  }
+  h1{
+    border-bottom: 1px solid rgb(80, 216, 38);
+    text-align: center;
+  }
+  
+  li{
+     color: black;
+    font-size: 25px;
+    font-size: bold;
+  }
+  
+  #date{color:green;}
+  

@@ -1,0 +1,23 @@
+<!doctype html>
+{%extends 'blog/base.html'%}
+{% load static %}
+
+
+{%block content%}
+{%for Post in  Post_list %}
+
+<a href="{{Post.get_absolute_url}}"><h2>{{Post.title}}</h2></a>
+<p >published on {{Post.publish}} by {{Post.author}}</p>
+{{Post.body |truncatewords:30 }}
+<br>
+<br>
+<br>
+<br>
+{%endfor%}
+{%endblock%}
+{%block sidebar%}
+{%for Post in  Post_list %}
+<a href="{{Post.get_absolute_url}}"><h4>{{Post.title}}</h4></a>
+{%endfor%}
+
+{%endblock%}
